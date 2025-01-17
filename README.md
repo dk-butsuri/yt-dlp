@@ -33,7 +33,7 @@ yt-dlpは、[数千ものサイト](supportedsites.md)に対応している高�
     * [一般オプション](#general-options)
     * [ネットワークオプション](#network-options)
     * [Geo-restriction](#geo-restriction)
-    * [Video Selection](#video-selection)
+    * [動画の選択](#video-selection)
     * [ダウンロードオプション](#download-options)
     * [Filesystem Options](#filesystem-options)
     * [サムネイルオプション](#thumbnail-options)
@@ -44,19 +44,19 @@ yt-dlpは、[数千ものサイト](supportedsites.md)に対応している高�
     * [字幕オプション](#subtitle-options)
     * [Authentication Options](#authentication-options)
     * [Post-processing Options](#post-processing-options)
-    * [SponsorBlockオプション](#sponsorblock-options)
+    * [SponsorBlockのオプション](#sponsorblock-options)
     * [Extractor Options](#extractor-options)
 * [CONFIGURATION](#configuration)
     * [Configuration file encoding](#configuration-file-encoding)
     * [Authentication with netrc](#authentication-with-netrc)
-    * [Notes about environment variables](#notes-about-environment-variables)
+    * [環境変数についての補足](#notes-about-environment-variables)
 * [OUTPUT TEMPLATE](#output-template)
     * [Output template examples](#output-template-examples)
-* [FORMAT SELECTION](#format-selection)
+* [フォーマットの選択](#format-selection)
     * [Filtering Formats](#filtering-formats)
     * [Sorting Formats](#sorting-formats)
     * [Format Selection examples](#format-selection-examples)
-* [MODIFYING METADATA](#modifying-metadata)
+* [メタデータの編集](#modifying-metadata)
     * [Modifying metadata examples](#modifying-metadata-examples)
 * [EXTRACTOR ARGUMENTS](#extractor-arguments)
 * [プラグイン](#plugins)
@@ -69,7 +69,7 @@ yt-dlpは、[数千ものサイト](supportedsites.md)に対応している高�
     * [Differences in default behavior](#differences-in-default-behavior)
     * [Deprecated options](#deprecated-options)
 * [貢献する方法](CONTRIBUTING.md#contributing-to-yt-dlp)
-    * [Opening an Issue](CONTRIBUTING.md#opening-an-issue)
+    * [イシューを開く](CONTRIBUTING.md#opening-an-issue)
     * [開発者向けの説明](CONTRIBUTING.md#developer-instructions)
 * [WIKI](https://github.com/yt-dlp/yt-dlp/wiki)
     * [FAQ](https://github.com/yt-dlp/yt-dlp/wiki/FAQ)
@@ -102,9 +102,9 @@ You can install yt-dlp using [the binaries](#release-files), [pip](https://pypi.
 [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)|Windows (Win8+) standalone x64 binary (recommended for **Windows**)
 [yt-dlp_macos](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos)|Universal MacOS (10.15+) standalone executable (recommended for **MacOS**)
 
-#### Alternatives
+#### 代替ファイル
 
-File|Description
+ファイル|概要
 :---|:---
 [yt-dlp_x86.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_x86.exe)|Windows (Win8+) standalone x86 (32-bit) binary
 [yt-dlp_linux](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux)|Linux standalone x64 binary
@@ -218,7 +218,7 @@ The following provide support for impersonating browser requests. This may be re
 * [**secretstorage**](https://github.com/mitya57/secretstorage)\* - For `--cookies-from-browser` to access the **Gnome** keyring while decrypting cookies of **Chromium**-based browsers on **Linux**. Licensed under [BSD-3-Clause](https://github.com/mitya57/secretstorage/blob/master/LICENSE)
 * Any external downloader that you want to use with `--downloader`
 
-### Deprecated
+### 非推奨
 
 * [**avconv** and **avprobe**](https://www.libav.org) - Now **deprecated** alternative to ffmpeg. License [depends on the build](https://libav.org/legal)
 * [**sponskrub**](https://github.com/faissaloo/SponSkrub) - For using the now **deprecated** [sponskrub options](#sponskrub-options). Licensed under [GPLv3+](https://github.com/faissaloo/SponSkrub/blob/master/LICENCE.md)
