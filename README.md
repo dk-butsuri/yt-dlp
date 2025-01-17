@@ -232,12 +232,12 @@ The standalone release binaries are built with the Python interpreter and the pa
 If you do not have the necessary dependencies for a task you are attempting, yt-dlp will warn you. All the currently available dependencies are visible at the top of the `--verbose` output
 
 
-## COMPILE
+##コンパイル
 
-### Standalone PyInstaller Builds
-To build the standalone executable, you must have Python and `pyinstaller` (plus any of yt-dlp's [optional dependencies](#dependencies) if needed). The executable will be built for the same CPU architecture as the Python used.
+### PyInstallerでのビルド
+スタンドアロンな実行ファイルをビルドするには、PythonとPyinstallerが必要です。 （必要ならばYT-DLPの[依存関係](#dependencies)も）実行ファイルはビルドする環境のCPUアーキテクチャ用にビルドされます。
 
-You can run the following commands:
+ビルドするには以下のコマンドを実行します。
 
 ```
 python3 devscripts/install_deps.py --include pyinstaller
@@ -245,13 +245,13 @@ python3 devscripts/make_lazy_extractors.py
 python3 -m bundle.pyinstaller
 ```
 
-On some systems, you may need to use `py` or `python` instead of `python3`.
+環境によっては、`python3`ではなく`py`や`python`を使用する必要がある場合があります。
 
 `python -m bundle.pyinstaller` accepts any arguments that can be passed to `pyinstaller`, such as `--onefile/-F` or `--onedir/-D`, which is further [documented here](https://pyinstaller.org/en/stable/usage.html#what-to-generate).
 
-**Note**: Pyinstaller versions below 4.4 [do not support](https://github.com/pyinstaller/pyinstaller#requirements-and-tested-platforms) Python installed from the Windows store without using a virtual environment.
+**補足**: Pyinstaller versions below 4.4 [do not support](https://github.com/pyinstaller/pyinstaller#requirements-and-tested-platforms) Python installed from the Windows store without using a virtual environment.
 
-**Important**: Running `pyinstaller` directly **instead of** using `python -m bundle.pyinstaller` is **not** officially supported. This may or may not work correctly.
+**重要**: Running `pyinstaller` directly **instead of** using `python -m bundle.pyinstaller` is **not** officially supported. This may or may not work correctly.
 
 ### Platform-independent Binary (UNIX)
 You will need the build tools `python` (3.9+), `zip`, `make` (GNU), `pandoc`\* and `pytest`\*.
@@ -273,19 +273,19 @@ Note: See their `--help` for more info.
 ### Forking the project
 If you fork the project on GitHub, you can run your fork's [build workflow](.github/workflows/build.yml) to automatically build the selected version(s) as artifacts. Alternatively, you can run the [release workflow](.github/workflows/release.yml) or enable the [nightly workflow](.github/workflows/release-nightly.yml) to create full (pre-)releases.
 
-# USAGE AND OPTIONS
+# 使用方法とオプション
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
     yt-dlp [OPTIONS] [--] URL [URL...]
 
-`Ctrl+F` is your friend :D
+検索ショートカット、`Ctrl+F`が便利ですよ
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
 <!-- Auto generated -->
-## General Options:
-    -h, --help                      Print this help text and exit
-    --version                       Print program version and exit
-    -U, --update                    Update this program to the latest version
+## 一般オプション:
+    -h, --help                      このオプションの説明を出力する
+    --version                       YT-dlpのバージョンを出力する
+    -U, --update                    YT-dlpを最新バージョンへアップデートする
     --no-update                     Do not check for updates (default)
     --update-to [CHANNEL]@[TAG]     Upgrade/downgrade to a specific version.
                                     CHANNEL can be a repository as well. CHANNEL
