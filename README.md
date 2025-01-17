@@ -180,20 +180,20 @@ Python 3.9+ (CPython) そして3.10+ (PyPy) をサポートしています。他
 On Windows, [Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) is also necessary to run yt-dlp. You probably already have this, but if the executable throws an error due to missing `MSVCR100.dll` you need to install it manually.
 -->
 
-While all the other dependencies are optional, `ffmpeg` and `ffprobe` are highly recommended
+他の依存関係は全てオプションですが、`ffmpeg`と`ffprobe` は強く推奨します。
 
 ### Strongly recommended
 
 * [**ffmpeg** および **ffprobe**](https://www.ffmpeg.org) - [音声と映像の結合](#format-selection)や、様々な[ポストプロセッシング](#post-processing-options)に必要です。ライセンスは [ビルドによって異なることがあります。](https://www.ffmpeg.org/legal.html)
 
-    There are bugs in ffmpeg that cause various issues when used alongside yt-dlp. Since ffmpeg is such an important dependency, we provide [custom builds](https://github.com/yt-dlp/FFmpeg-Builds#ffmpeg-static-auto-builds) with patches for some of these issues at [yt-dlp/FFmpeg-Builds](https://github.com/yt-dlp/FFmpeg-Builds). See [the readme](https://github.com/yt-dlp/FFmpeg-Builds#patches-applied) for details on the specific issues solved by these builds
+    ffmpegにはいくつかバグが存在しており、YT-dlpの動作に問題を引き起こす場合があります。ffmpegはYT-dlpに非常に重要な依存関係なので、[yt-dlp/FFmpeg-Builds](https://github.com/yt-dlp/FFmpeg-Builds)にてそれらのいくつかの問題を解決するパッチが含まれた[独自のビルド](https://github.com/yt-dlp/FFmpeg-Builds#ffmpeg-static-auto-builds)を公開しています。これらのパッチで修正される具体的な問題の詳細については、[the readme](https://github.com/yt-dlp/FFmpeg-Builds#patches-applied) を参照してください。
 
-    **Important**: What you need is ffmpeg *binary*, **NOT** [the Python package of the same name](https://pypi.org/project/ffmpeg)
+    **重要**: YT-dlpに必要なのは、ffmpeg *バイナリ*であり、[同じ名前のPythonのパッケージ](https://pypi.org/project/ffmpeg)では**ありません**。 
 
-### Networking
+### ネットワーク
 * [**certifi**](https://github.com/certifi/python-certifi)\* - Provides Mozilla's root certificate bundle. Licensed under [MPLv2](https://github.com/certifi/python-certifi/blob/master/LICENSE)
 * [**brotli**](https://github.com/google/brotli)\* or [**brotlicffi**](https://github.com/python-hyper/brotlicffi) - [Brotli](https://en.wikipedia.org/wiki/Brotli) content encoding support. Both licensed under MIT <sup>[1](https://github.com/google/brotli/blob/master/LICENSE) [2](https://github.com/python-hyper/brotlicffi/blob/master/LICENSE) </sup>
-* [**websockets**](https://github.com/aaugustin/websockets)\* - For downloading over websocket. Licensed under [BSD-3-Clause](https://github.com/aaugustin/websockets/blob/main/LICENSE)
+* [**websockets**](https://github.com/aaugustin/websockets)\* - WebSocketを使ったダウンロード用。 Licensed under [BSD-3-Clause](https://github.com/aaugustin/websockets/blob/main/LICENSE)
 * [**requests**](https://github.com/psf/requests)\* - HTTP library. For HTTPS proxy and persistent connections support. Licensed under [Apache-2.0](https://github.com/psf/requests/blob/main/LICENSE)
 
 #### Impersonation
