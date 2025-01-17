@@ -136,8 +136,8 @@ gpg --verify SHA2-512SUMS.sig SHA2-512SUMS
 **Note**: The manpages, shell completion (autocomplete) files etc. are available inside the [source tarball](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.tar.gz)
 
 
-## UPDATE
-You can use `yt-dlp -U` to update if you are using the [release binaries](#release-files)
+## アップデート
+[リリースされたバイナリ](#release-files)を使用している場合、コマンドラインで`yt-dlp -U`と実行することで、YT-dlpをアップデートできます。
 
 If you [installed with pip](https://github.com/yt-dlp/yt-dlp/wiki/Installation#with-pip), simply re-run the same command that was used to install the program
 
@@ -172,8 +172,8 @@ yt-dlp --update-to nightly
 python3 -m pip install -U --pre "yt-dlp[default]"
 ```
 
-## DEPENDENCIES
-Python versions 3.9+ (CPython) and 3.10+ (PyPy) are supported. Other versions and implementations may or may not work correctly.
+## 環境要件
+Python 3.9+ (CPython) そして3.10+ (PyPy) をサポートしています。他のバージョンでは正しく動作しない可能性があります。
 
 <!-- Python 3.5+ uses VC++14 and it is already embedded in the binary created
 <!x-- https://www.microsoft.com/en-us/download/details.aspx?id=26999 --x>
@@ -184,7 +184,7 @@ While all the other dependencies are optional, `ffmpeg` and `ffprobe` are highly
 
 ### Strongly recommended
 
-* [**ffmpeg** and **ffprobe**](https://www.ffmpeg.org) - Required for [merging separate video and audio files](#format-selection), as well as for various [post-processing](#post-processing-options) tasks. License [depends on the build](https://www.ffmpeg.org/legal.html)
+* [**ffmpeg** および **ffprobe**](https://www.ffmpeg.org) - [音声と映像の結合](#format-selection)や、様々な[ポストプロセッシング](#post-processing-options)に必要です。ライセンスは [ビルドによって異なることがあります。](https://www.ffmpeg.org/legal.html)
 
     There are bugs in ffmpeg that cause various issues when used alongside yt-dlp. Since ffmpeg is such an important dependency, we provide [custom builds](https://github.com/yt-dlp/FFmpeg-Builds#ffmpeg-static-auto-builds) with patches for some of these issues at [yt-dlp/FFmpeg-Builds](https://github.com/yt-dlp/FFmpeg-Builds). See [the readme](https://github.com/yt-dlp/FFmpeg-Builds#patches-applied) for details on the specific issues solved by these builds
 
