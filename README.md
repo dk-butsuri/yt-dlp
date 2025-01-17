@@ -17,8 +17,9 @@
 </div>
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
-yt-dlp is a feature-rich command-line audio/video downloader with support for [thousands of sites](supportedsites.md). The project is a fork of [youtube-dl](https://github.com/ytdl-org/youtube-dl) based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc).
-
+yt-dlpは、[数千ものサイト](supportedsites.md)に対応している高機能なコマンドライン動画/音声ダウンローダーです。 
+このプロジェクトは、現在更新が停止している [youtube-dlc](https://github.com/blackjack4494/yt-dlc)をベースとした
+[youtube-dl](https://github.com/ytdl-org/youtube-dl)のフォークです。
 <!-- MANPAGE: MOVE "USAGE AND OPTIONS" SECTION HERE -->
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
@@ -75,7 +76,7 @@ yt-dlp is a feature-rich command-line audio/video downloader with support for [t
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
 
-# INSTALLATION
+# インストール
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
 [![Windows](https://img.shields.io/badge/-Windows_x64-blue.svg?style=for-the-badge&logo=windows)](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)
@@ -91,11 +92,11 @@ You can install yt-dlp using [the binaries](#release-files), [pip](https://pypi.
 
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
-## RELEASE FILES
+## リリースファイル
 
-#### Recommended
+#### 推奨
 
-File|Description
+ファイル|概要
 :---|:---
 [yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp)|Platform-independent [zipimport](https://docs.python.org/3/library/zipimport.html) binary. Needs Python (recommended for **Linux/BSD**)
 [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)|Windows (Win8+) standalone x64 binary (recommended for **Windows**)
